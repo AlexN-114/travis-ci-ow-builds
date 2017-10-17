@@ -1,17 +1,17 @@
 Build host: UNIX
-========= 20:39:00 /home/travis/build/open-watcom/open-watcom-v2/bld ==========
+========= 18:46:57 /home/travis/build/open-watcom/open-watcom-v2/bld ==========
 **** Building the watcom bootstrap
-====== 20:39:00 /home/travis/build/open-watcom/open-watcom-v2/bld/watcom ======
-= 20:39:00 /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild ==
+====== 18:46:57 /home/travis/build/open-watcom/open-watcom-v2/bld/watcom ======
+= 18:46:57 /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild ==
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o clibext.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/clibext.c
 ar crs clibext.lib clibext.obj
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -fPIC -o dllobjs/clibext.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__       -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/clibext.c
 ar crs clibexts.lib dllobjs/clibext.obj
-====== 20:39:00 /home/travis/build/open-watcom/open-watcom-v2/bld/watcom ======
-====== 20:39:00 /home/travis/build/open-watcom/open-watcom-v2/bld/watcom ======
+====== 18:46:57 /home/travis/build/open-watcom/open-watcom-v2/bld/watcom ======
+====== 18:46:57 /home/travis/build/open-watcom/open-watcom-v2/bld/watcom ======
 **** Building the wcpp bootstrap
-======= 20:39:00 /home/travis/build/open-watcom/open-watcom-v2/bld/cpp ========
-=== 20:39:00 /home/travis/build/open-watcom/open-watcom-v2/bld/cpp/binbuild ===
+======= 18:46:57 /home/travis/build/open-watcom/open-watcom-v2/bld/cpp ========
+=== 18:46:57 /home/travis/build/open-watcom/open-watcom-v2/bld/cpp/binbuild ===
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o wcpp.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/posix/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/wcpp.c
 ../c/wcpp.c: In function ‘scanEnvVarOrFile’:
 ../c/wcpp.c:291:14: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
@@ -24,26 +24,26 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o ppenv.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/posix/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/ppenv.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o pathlist.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/posix/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/c/pathlist.c
 gcc -pipe  -O -g -o wcpp.exe  -Wl,-Map,wcpp.map wcpp.obj preproc.obj ppexpr.obj ppmacro.obj ppmem.obj ppenv.obj pathlist.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-======= 20:39:01 /home/travis/build/open-watcom/open-watcom-v2/bld/cpp ========
+======= 18:46:58 /home/travis/build/open-watcom/open-watcom-v2/bld/cpp ========
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/binbuild/wcpp.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/wcpp'...
-======= 20:39:01 /home/travis/build/open-watcom/open-watcom-v2/bld/cpp ========
+======= 18:46:58 /home/travis/build/open-watcom/open-watcom-v2/bld/cpp ========
 **** Building the femisc bootstrap
-===== 20:39:01 /home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc ======
-= 20:39:01 /home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/binbuild =
+===== 18:46:58 /home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc ======
+= 18:46:58 /home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/binbuild =
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o optencod.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/optencod.c
 gcc -pipe  -O -g -o optencod.exe  -Wl,-Map,optencod.map optencod.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o msgencod.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/msgencod.c
 gcc -pipe  -O -g -o msgencod.exe  -Wl,-Map,msgencod.map msgencod.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o findhash.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/findhash.c
 gcc -pipe  -O -g -o findhash.exe  -Wl,-Map,findhash.map findhash.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-===== 20:39:02 /home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc ======
+===== 18:46:59 /home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc ======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/binbuild/optencod.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/optencod'...
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/binbuild/msgencod.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/msgencod'...
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/binbuild/findhash.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/findhash'...
-===== 20:39:02 /home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc ======
+===== 18:46:59 /home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc ======
 **** Building the orl bootstrap
-======= 20:39:02 /home/travis/build/open-watcom/open-watcom-v2/bld/orl ========
-=== 20:39:02 /home/travis/build/open-watcom/open-watcom-v2/bld/orl/binbuild ===
+======= 18:46:59 /home/travis/build/open-watcom/open-watcom-v2/bld/orl ========
+=== 18:46:59 /home/travis/build/open-watcom/open-watcom-v2/bld/orl/binbuild ===
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o orlentry.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/elf/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/coff/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/omf/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/orl/c/orlentry.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o orlflhnd.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/elf/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/coff/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/omf/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/orl/c/orlflhnd.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o orlhash.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/elf/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/coff/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/omf/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/orl/c/orlhash.c
@@ -62,10 +62,10 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o coffload.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/elf/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/coff/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/omf/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/orl/coff/c/coffload.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o coffimpl.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/elf/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/coff/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/omf/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/orl/coff/c/coffimpl.c
 ar crs orl.lib orlentry.obj orlflhnd.obj orlhash.obj omfload.obj omfmunge.obj omfentr.obj omfflhn.obj omfdrctv.obj elfentr.obj elflwlv.obj elfflhn.obj elfload.obj coffentr.obj cofflwlv.obj coffflhn.obj coffload.obj coffimpl.obj
-======= 20:39:03 /home/travis/build/open-watcom/open-watcom-v2/bld/orl ========
+======= 18:47:02 /home/travis/build/open-watcom/open-watcom-v2/bld/orl ========
 **** Building the wlib bootstrap
-====== 20:39:03 /home/travis/build/open-watcom/open-watcom-v2/bld/nwlib =======
-== 20:39:03 /home/travis/build/open-watcom/open-watcom-v2/bld/nwlib/binbuild ==
+====== 18:47:02 /home/travis/build/open-watcom/open-watcom-v2/bld/nwlib =======
+== 18:47:02 /home/travis/build/open-watcom/open-watcom-v2/bld/nwlib/binbuild ==
 wcpp -zk0 -D__UNIX__ -D__LINUX__ -D_M_X64 -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" -owlibmsg.gh ../wlib.msg
 awk -f /home/travis/build/open-watcom/open-watcom-v2/build/msgtoh.awk -v OUTFILE=msg.gh wlibmsg.gh
 wcpp -zk0 -D__UNIX__ -D__LINUX__ -D_M_X64 -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" -I.. -oincltext.gh ../h/incltext.h
@@ -113,12 +113,12 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o idedrv.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -D__WLIB__ -DINCL_MSGTEXT -DIDE_PGM    -DSTATIC_LINKAGE -I. -I.. -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/elf/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/coff/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/omf/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/c/idedrv.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o idemsgfm.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -D__WLIB__ -DINCL_MSGTEXT -DIDE_PGM     -I. -I.. -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/elf/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/coff/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/omf/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/c/idemsgfm.c
 gcc -pipe  -O -g -o bwlib.exe  -Wl,-Map,bwlib.map wlib.obj libio.obj symtable.obj omfproc.obj writelib.obj convert.obj wlibutil.obj libwalk.obj symlist.obj proclib.obj cmdline.obj error.obj implib.obj elfobjs.obj orlrtns.obj memfuncs.obj demangle.obj omfhash.obj omfutil.obj coffwrt.obj inlib.obj idemsgpr.obj ideentry.obj orlentry.obj orlflhnd.obj orlhash.obj omfload.obj omfmunge.obj omfentr.obj omfflhn.obj omfdrctv.obj elfentr.obj elflwlv.obj elfflhn.obj elfload.obj coffentr.obj cofflwlv.obj coffflhn.obj coffload.obj coffimpl.obj maindrv.obj idedrv.obj idemsgfm.obj  /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-====== 20:39:07 /home/travis/build/open-watcom/open-watcom-v2/bld/nwlib =======
+====== 18:47:07 /home/travis/build/open-watcom/open-watcom-v2/bld/nwlib =======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/nwlib/binbuild/bwlib.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwlib'...
-====== 20:39:07 /home/travis/build/open-watcom/open-watcom-v2/bld/nwlib =======
+====== 18:47:07 /home/travis/build/open-watcom/open-watcom-v2/bld/nwlib =======
 **** Building the yacc bootstrap
-======= 20:39:07 /home/travis/build/open-watcom/open-watcom-v2/bld/yacc =======
-== 20:39:07 /home/travis/build/open-watcom/open-watcom-v2/bld/yacc/binbuild ===
+======= 18:47:07 /home/travis/build/open-watcom/open-watcom-v2/bld/yacc =======
+== 18:47:07 /home/travis/build/open-watcom/open-watcom-v2/bld/yacc/binbuild ===
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o bitsets.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/yacc/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/bitsets.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o buildpro.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/yacc/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/buildpro.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o default.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/yacc/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/default.c
@@ -137,12 +137,12 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o used.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/yacc/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/used.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o yacc.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/yacc/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/yacc.c
 gcc -pipe  -O -g -o yacc.exe  -Wl,-Map,yacc.map bitsets.obj buildpro.obj default.obj defshift.obj dont_opt.obj elimunit.obj fpopen.obj genfast.obj gensupp.obj gentable.obj getname.obj lalr1.obj lr0.obj parse.obj sentence.obj used.obj yacc.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-======= 20:39:09 /home/travis/build/open-watcom/open-watcom-v2/bld/yacc =======
+======= 18:47:09 /home/travis/build/open-watcom/open-watcom-v2/bld/yacc =======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/yacc/binbuild/yacc.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/yacc'...
-======= 20:39:09 /home/travis/build/open-watcom/open-watcom-v2/bld/yacc =======
+======= 18:47:09 /home/travis/build/open-watcom/open-watcom-v2/bld/yacc =======
 **** Building the buildutl bootstrap
-===== 20:39:09 /home/travis/build/open-watcom/open-watcom-v2/bld/builder ======
-= 20:39:09 /home/travis/build/open-watcom/open-watcom-v2/bld/builder/binbuild =
+===== 18:47:09 /home/travis/build/open-watcom/open-watcom-v2/bld/builder ======
+= 18:47:09 /home/travis/build/open-watcom/open-watcom-v2/bld/builder/binbuild =
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o sweep.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DSTANDALONE_RX     -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/pmake" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/posix/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/sweep.c
 ../c/sweep.c: In function ‘main’:
 ../c/sweep.c:490:11: warning: ignoring return value of ‘getcwd’, declared with attribute warn_unused_result [-Wunused-result]
@@ -171,16 +171,16 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe  -O -g -o genverrc.exe  -Wl,-Map,genverrc.map genverrc.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o crlf.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DSTANDALONE_RX     -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/pmake" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/posix/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/crlf.c
 gcc -pipe  -O -g -o crlf.exe  -Wl,-Map,crlf.map crlf.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-===== 20:39:09 /home/travis/build/open-watcom/open-watcom-v2/bld/builder ======
+===== 18:47:09 /home/travis/build/open-watcom/open-watcom-v2/bld/builder ======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/builder/binbuild/wsplice.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/wsplice'...
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/builder/binbuild/sweep.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/sweep'...
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/builder/binbuild/comstrip.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/comstrip'...
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/builder/binbuild/genverrc.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/genverrc'...
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/builder/binbuild/crlf.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/crlf'...
-===== 20:39:09 /home/travis/build/open-watcom/open-watcom-v2/bld/builder ======
+===== 18:47:09 /home/travis/build/open-watcom/open-watcom-v2/bld/builder ======
 **** Building the wres bootstrap
-======= 20:39:09 /home/travis/build/open-watcom/open-watcom-v2/bld/wres =======
-== 20:39:09 /home/travis/build/open-watcom/open-watcom-v2/bld/wres/binbuild ===
+======= 18:47:09 /home/travis/build/open-watcom/open-watcom-v2/bld/wres =======
+== 18:47:09 /home/travis/build/open-watcom/open-watcom-v2/bld/wres/binbuild ===
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o loadfind.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wres/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/wres/c/loadfind.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o loadstr.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wres/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/wres/c/loadstr.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o mrrdrh.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wres/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/wres/c/mrrdrh.c
@@ -269,10 +269,10 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o wrrwrid.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wres/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/wres/c/wrrwrid.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o wrwritdi.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wres/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/wres/c/wrwritdi.c
 ar crs wres.lib loadfind.obj loadstr.obj mrrdrh.obj opcl1.obj ralliae.obj rclosef.obj rduint16.obj rduint32.obj rduint8.obj rdpaddw.obj resseek.obj ropenfro.obj rrdstr.obj rrnamoor.obj seekres.obj varstr.obj wmemicmp.obj wraddres.obj wrerror.obj wrfindrs.obj wrfirres.obj wrfree.obj wrfreedi.obj wrgetli.obj wridcmp.obj wridexby.obj wridfnoo.obj wridfrnu.obj wridfrst.obj wridfrsf.obj wridnacm.obj wriidfn.obj wrinitdi.obj wriswrf.obj wrreaddi.obj wrrewrid.obj wrrfrr.obj wrrftr.obj wrrhr.obj loadres.obj loadresx.obj rdlli.obj resaccel.obj resbitmp.obj resrdiag.obj reswdiag.obj resfont.obj resiccu.obj resrmenu.obj reswmenu.obj resnamor.obj resraw.obj resstr.obj restbar.obj restell.obj resver.obj rillia.obj rillib.obj ropenfrw.obj ropenewf.obj rrlli.obj wrauto.obj wrchkwrf.obj wrdelrs.obj wresrtns.obj wrfilein.obj wrgetri.obj wrgetti.obj wrhidcmp.obj wrhidfno.obj wrhidfre.obj wrhidfrn.obj wrhidfrs.obj wridfree.obj wridnfst.obj wridtnoo.obj wridtonu.obj wridtost.obj wrihidf.obj wrisempt.obj wrislr.obj write.obj wrmergdi.obj wrnextrs.obj wrrfwrid.obj wrrwrid.obj wrwritdi.obj
-======= 20:39:12 /home/travis/build/open-watcom/open-watcom-v2/bld/wres =======
+======= 18:47:12 /home/travis/build/open-watcom/open-watcom-v2/bld/wres =======
 **** Building the wrc bootstrap
-====== 20:39:12 /home/travis/build/open-watcom/open-watcom-v2/bld/rc/rc =======
-== 20:39:12 /home/travis/build/open-watcom/open-watcom-v2/bld/rc/rc/binbuild ==
+====== 18:47:12 /home/travis/build/open-watcom/open-watcom-v2/bld/rc/rc =======
+== 18:47:12 /home/travis/build/open-watcom/open-watcom-v2/bld/rc/rc/binbuild ==
 cat ../1250.uni >1250.uni
 cat ../1251.uni >1251.uni
 cat ../1252.uni >1252.uni
@@ -351,13 +351,13 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o idedrv.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -D_STANDALONE_ -DYYDEBUG -DSCANDEBUG -DINCL_MSGTEXT -DIDE_PGM    -DSTATIC_LINKAGE -I. -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wres/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/c/idedrv.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o idemsgfm.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -D_STANDALONE_ -DYYDEBUG -DSCANDEBUG -DINCL_MSGTEXT -DIDE_PGM     -I. -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wres/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/c/idemsgfm.c
 gcc -pipe  -O -g -o bwrc.exe  -Wl,-Map,bwrc.map winytab.obj os2ytab.obj keywordw.obj keyword2.obj rcerrors.obj exeobj.obj exeresw.obj exeres2.obj exerespe.obj exereslx.obj exelxobj.obj exeseg.obj exeutil.obj global.obj layer0.obj mergedir.obj param.obj pass2.obj rc.obj rcio.obj rcmem.obj rcstr.obj ppalloc.obj pprcenv.obj scanw.obj scan2.obj semacclw.obj semantic.obj semantcw.obj semdiagw.obj semmenuw.obj semverw.obj semtbarw.obj semantc2.obj semdiag2.obj semmenu2.obj semsngl2.obj semstr2.obj semaccl2.obj semhelp2.obj semraw.obj semsnglw.obj semstrw.obj dbtable.obj preproc.obj ppexpr.obj ppmacro.obj tmpctl.obj autodep.obj rcldstr.obj rcalloc1.obj rcalloc0.obj sharedio.obj semresfl.obj semutil.obj leadbyte.obj ideentry.obj idemsgpr.obj pathlist.obj rcspawn.obj maindrv.obj idedrv.obj idemsgfm.obj /home/travis/build/open-watcom/open-watcom-v2/bld/wres/binbuild/wres.lib /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-====== 20:39:17 /home/travis/build/open-watcom/open-watcom-v2/bld/rc/rc =======
+====== 18:47:19 /home/travis/build/open-watcom/open-watcom-v2/bld/rc/rc =======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/rc/rc/binbuild/bwrc.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwrc'...
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/rc/rc/binbuild/kanji.uni' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/kanji.uni'...
-====== 20:39:17 /home/travis/build/open-watcom/open-watcom-v2/bld/rc/rc =======
+====== 18:47:19 /home/travis/build/open-watcom/open-watcom-v2/bld/rc/rc =======
 **** Building the wstrip bootstrap
-====== 20:39:17 /home/travis/build/open-watcom/open-watcom-v2/bld/wstrip ======
-= 20:39:17 /home/travis/build/open-watcom/open-watcom-v2/bld/wstrip/binbuild ==
+====== 18:47:19 /home/travis/build/open-watcom/open-watcom-v2/bld/wstrip ======
+= 18:47:19 /home/travis/build/open-watcom/open-watcom-v2/bld/wstrip/binbuild ==
 wcpp -zk0 -D__UNIX__ -D__LINUX__ -D_M_X64 -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" -owstrip.gh ../wstrip.msg
 awk -f /home/travis/build/open-watcom/open-watcom-v2/build/msgtoh.awk -v OUTFILE=msg.gh wstrip.gh
 wcpp -zk0 -D__UNIX__ -D__LINUX__ -D_M_X64 -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" -I.. -oincltext.gh ../incltext.h
@@ -383,12 +383,12 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
      posix_write( STDOUT_FILENO, &c, 1 );
                 ^
 gcc -pipe  -O -g -o wstripx.exe  -Wl,-Map,wstripx.map strip.obj output.obj  /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-====== 20:39:18 /home/travis/build/open-watcom/open-watcom-v2/bld/wstrip ======
+====== 18:47:19 /home/travis/build/open-watcom/open-watcom-v2/bld/wstrip ======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/wstrip/binbuild/wstripx.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwstrip'...
-====== 20:39:18 /home/travis/build/open-watcom/open-watcom-v2/bld/wstrip ======
+====== 18:47:19 /home/travis/build/open-watcom/open-watcom-v2/bld/wstrip ======
 **** Building the dwarfdw bootstrap
-===== 20:39:18 /home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw =====
-= 20:39:18 /home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/binbuild ==
+===== 18:47:19 /home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw =====
+= 18:47:19 /home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/binbuild ==
 gcc -pipe -fno-asm -fno-common -fsigned-char   -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/c/dwmakeab.c -I"../h" -D__UNIX__ -D__FLAT__ -D__LINUX__ -D_M_X64 -D__LINUX_X64__ -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o ./dwmakeab.exe /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib  -Wl,-Map,dwmakeab.map
 ./dwmakeab.exe
 ./dwmakeab.exe
@@ -411,10 +411,10 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o dwtype.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I. -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/c/dwtype.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o dwutils.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I. -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/c/dwutils.c
 ar crs dwarfw.lib dwabbrev.obj dwarange.obj dwcarve.obj dwdie.obj dwdecl.obj dwgen.obj dwhandle.obj dwinfo.obj dwline.obj dwlngen.obj dwloc.obj dwmac.obj dwmem.obj dwname.obj dwrefer.obj dwsym.obj dwtype.obj dwutils.obj
-===== 20:39:19 /home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw =====
+===== 18:47:21 /home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw =====
 **** Building the wlink bootstrap
-======== 20:39:19 /home/travis/build/open-watcom/open-watcom-v2/bld/wl ========
-=== 20:39:19 /home/travis/build/open-watcom/open-watcom-v2/bld/wl/binbuild ====
+======== 18:47:21 /home/travis/build/open-watcom/open-watcom-v2/bld/wl ========
+=== 18:47:21 /home/travis/build/open-watcom/open-watcom-v2/bld/wl/binbuild ====
 wcpp -zk0 -D__UNIX__ -D__LINUX__ -D_M_X64 -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" -owrcmsg.gh /home/travis/build/open-watcom/open-watcom-v2/bld/rc/rc/h/rc.msg
 awk -v rcbase=800 -f /home/travis/build/open-watcom/open-watcom-v2/build/msgtoh.awk -v OUTFILE=rcmsg.gh wrcmsg.gh
 bwrc -q -xb -r -bt=windows -zk0 -D__UNIX__ -D__LINUX__ -D_M_X64 -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/rc/rc/h" ../h/wlink.rc -fo=wresui.res
@@ -512,12 +512,12 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o maindrv.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -D__WLINK__ -DIDE_PGM    -DDLL_NAME=bwlinkd -I. -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/orl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/rc/rc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wres/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/c"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/maindrv.c
 gcc -pipe  -O -g -o bwlink.exe  -Wl,-Map,bwlink.map autogrp.obj carve.obj wcomdef.obj cmd16m.obj cmdall.obj cmddos.obj cmdelf.obj cmdline.obj cmdnov.obj cmdos2.obj cmdphar.obj cmdzdos.obj cmdrdv.obj cmdraw.obj cmdtable.obj cmdutils.obj cmdqnx.obj dbgall.obj dbgcv.obj dbgdwarf.obj dbginfo.obj debug.obj distrib.obj global.obj hash.obj ideentry.obj idemsgpr.obj impexp.obj libr.obj libsupp.obj linkutil.obj load16m.obj loaddos.obj loadelf.obj loadelf2.obj loadfile.obj loadflat.obj loadnov.obj loados2.obj loadpe.obj loadphar.obj loadqnx.obj loadraw.obj loadzdos.obj loadrdv.obj lsymtab.obj mapio.obj mem.obj mixcache.obj msg.obj objio.obj obj2supp.obj objcalc.obj objfree.obj objnode.obj objomf.obj objorl.obj objpass1.obj objpass2.obj objstrip.obj omfhash.obj omfreloc.obj overlays.obj ovlsupp.obj permdata.obj procfile.obj reloc.obj ring.obj ring2.obj salloc.obj spillio.obj strtab.obj symmem.obj symtrace.obj toc.obj wlink.obj wlnkmsg.obj demangle.obj pathlist.obj exerespe.obj mergedir.obj sharedio.obj rcstr.obj virtpage.obj posixio.obj stidedrv.obj idemsgfm.obj maindrv.obj /home/travis/build/open-watcom/open-watcom-v2/bld/wres/binbuild/wres.lib /home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/binbuild/dwarfw.lib /home/travis/build/open-watcom/open-watcom-v2/bld/orl/binbuild/orl.lib /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
 bwstrip -q -a -r bwlink.exe . wresui.res
-======== 20:39:27 /home/travis/build/open-watcom/open-watcom-v2/bld/wl ========
+======== 18:47:31 /home/travis/build/open-watcom/open-watcom-v2/bld/wl ========
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/wl/binbuild/bwlink.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwlink'...
-======== 20:39:27 /home/travis/build/open-watcom/open-watcom-v2/bld/wl ========
+======== 18:47:31 /home/travis/build/open-watcom/open-watcom-v2/bld/wl ========
 **** Building the owl bootstrap
-======= 20:39:27 /home/travis/build/open-watcom/open-watcom-v2/bld/owl ========
-=== 20:39:27 /home/travis/build/open-watcom/open-watcom-v2/bld/owl/binbuild ===
+======= 18:47:31 /home/travis/build/open-watcom/open-watcom-v2/bld/owl ========
+=== 18:47:31 /home/travis/build/open-watcom/open-watcom-v2/bld/owl/binbuild ===
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o owl.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/owl/c/owl.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o owbuffer.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/owl/c/owbuffer.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o owcoff.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/owl/c/owcoff.c
@@ -532,10 +532,10 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o owsymdmp.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/owl/c/owsymdmp.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o log.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/owl/c/log.c
 ar crs owl.lib owl.obj owbuffer.obj owcoff.obj owdebug.obj owelf.obj owemit.obj owfile.obj owreloc.obj owsect.obj owstring.obj owsymbol.obj owsymdmp.obj log.obj
-======= 20:39:28 /home/travis/build/open-watcom/open-watcom-v2/bld/owl ========
+======= 18:47:32 /home/travis/build/open-watcom/open-watcom-v2/bld/owl ========
 **** Building the re2c bootstrap
-======= 20:39:28 /home/travis/build/open-watcom/open-watcom-v2/bld/re2c =======
-== 20:39:28 /home/travis/build/open-watcom/open-watcom-v2/bld/re2c/binbuild ===
+======= 18:47:32 /home/travis/build/open-watcom/open-watcom-v2/bld/re2c =======
+== 18:47:32 /home/travis/build/open-watcom/open-watcom-v2/bld/re2c/binbuild ===
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o actions.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/re2c/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/actions.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o code.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/re2c/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/code.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o dfa.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/re2c/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/dfa.c
@@ -627,14 +627,14 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
  ^
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o substr.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/bld/re2c/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/substr.c
 gcc -pipe  -O -g -o re2c.exe  -Wl,-Map,re2c.map actions.obj code.obj dfa.obj main.obj parser.obj scanner.obj substr.obj  /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-======= 20:39:29 /home/travis/build/open-watcom/open-watcom-v2/bld/re2c =======
+======= 18:47:33 /home/travis/build/open-watcom/open-watcom-v2/bld/re2c =======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/re2c/binbuild/re2c.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/re2c'...
-======= 20:39:29 /home/travis/build/open-watcom/open-watcom-v2/bld/re2c =======
+======= 18:47:33 /home/travis/build/open-watcom/open-watcom-v2/bld/re2c =======
 **** Building the re2c bootstrap
-======== 20:39:29 /home/travis/build/open-watcom/open-watcom-v2/bld/as ========
+======== 18:47:33 /home/travis/build/open-watcom/open-watcom-v2/bld/as ========
 **** Building the wasaxp bootstrap
-====== 20:39:29 /home/travis/build/open-watcom/open-watcom-v2/bld/as/axp ======
-= 20:39:29 /home/travis/build/open-watcom/open-watcom-v2/bld/as/axp/binbuild ==
+====== 18:47:33 /home/travis/build/open-watcom/open-watcom-v2/bld/as/axp ======
+= 18:47:33 /home/travis/build/open-watcom/open-watcom-v2/bld/as/axp/binbuild ==
 wcpp -zk0 -D__UNIX__ -D__LINUX__ -D_M_X64 -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_ALPHA    -oasi_msg.tmp /home/travis/build/open-watcom/open-watcom-v2/bld/as/h/as.msg
 awk -v base=AS_MSG_BASE -f /home/travis/build/open-watcom/open-watcom-v2/build/makemsg.awk -v OUTFILE=asi_msg.gh asi_msg.tmp
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o asexpr.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_ALPHA     -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/axp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/as/c/asexpr.c
@@ -954,6 +954,10 @@ scan_in.re:269:1: warning: label ‘yy1’ defined but not used [-Wunused-label]
  ^
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stand/main.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_ALPHA    -D_STANDALONE_   -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/axp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/as/c/main.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stand/obj.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_ALPHA    -D_STANDALONE_   -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/axp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/as/c/obj.c
+/home/travis/build/open-watcom/open-watcom-v2/bld/as/c/obj.c: In function ‘owl_write’:
+/home/travis/build/open-watcom/open-watcom-v2/bld/as/c/obj.c:114:16: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+     posix_write( OWLF2FH( f ), buff, size );
+                ^
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stand/sections.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_ALPHA    -D_STANDALONE_   -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/axp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/as/c/sections.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stand/options.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_ALPHA    -D_STANDALONE_   -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/axp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/as/c/options.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stand/preproc.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_ALPHA    -D_STANDALONE_   -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/axp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/cpp/c/preproc.c
@@ -966,12 +970,12 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 bwrc -q -xb -r -bt=windows -zk0 -D__UNIX__ -D__LINUX__ -D_M_X64 -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_ALPHA    -D_STANDALONE_ /home/travis/build/open-watcom/open-watcom-v2/bld/as/h/as.rc -fo=wresui.res
 gcc -pipe  -O -g -o bwasaxp.exe  -Wl,-Map,bwasaxp.map stand/asexpr.obj stand/asopernd.obj stand/asmem.obj stand/asutils.obj stand/asregs.obj stand/assymbol.obj stand/asdrectv.obj stand/asdirop.obj stand/asnumlab.obj stand/ashash.obj stand/asmsg.obj stand/alphafmt.obj stand/alphains.obj stand/asytab.obj stand/aslexyy.obj stand/main.obj stand/obj.obj stand/sections.obj stand/options.obj stand/preproc.obj stand/ppexpr.obj stand/ppmacro.obj stand/ppmem.obj stand/ppenv.obj stand/pathlist.obj stand/trmemcvr.obj /home/travis/build/open-watcom/open-watcom-v2/bld/owl/binbuild/owl.lib /home/travis/build/open-watcom/open-watcom-v2/bld/wres/binbuild/wres.lib /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
 bwstrip -q -a -r bwasaxp.exe . wresui.res
-====== 20:39:32 /home/travis/build/open-watcom/open-watcom-v2/bld/as/axp ======
+====== 18:47:37 /home/travis/build/open-watcom/open-watcom-v2/bld/as/axp ======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/as/axp/binbuild/bwasaxp.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwasaxp'...
-====== 20:39:32 /home/travis/build/open-watcom/open-watcom-v2/bld/as/axp ======
+====== 18:47:37 /home/travis/build/open-watcom/open-watcom-v2/bld/as/axp ======
 **** Building the wasmps bootstrap
-====== 20:39:32 /home/travis/build/open-watcom/open-watcom-v2/bld/as/mps ======
-= 20:39:32 /home/travis/build/open-watcom/open-watcom-v2/bld/as/mps/binbuild ==
+====== 18:47:37 /home/travis/build/open-watcom/open-watcom-v2/bld/as/mps ======
+= 18:47:37 /home/travis/build/open-watcom/open-watcom-v2/bld/as/mps/binbuild ==
 wcpp -zk0 -D__UNIX__ -D__LINUX__ -D_M_X64 -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_MIPS    -oasi_msg.tmp /home/travis/build/open-watcom/open-watcom-v2/bld/as/h/as.msg
 awk -v base=AS_MSG_BASE -f /home/travis/build/open-watcom/open-watcom-v2/build/makemsg.awk -v OUTFILE=asi_msg.gh asi_msg.tmp
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o asexpr.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_MIPS     -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/mps/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/as/c/asexpr.c
@@ -1291,6 +1295,10 @@ scan_in.re:268:1: warning: label ‘yy1’ defined but not used [-Wunused-label]
  ^
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stand/main.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_MIPS    -D_STANDALONE_   -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/mps/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/as/c/main.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stand/obj.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_MIPS    -D_STANDALONE_   -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/mps/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/as/c/obj.c
+/home/travis/build/open-watcom/open-watcom-v2/bld/as/c/obj.c: In function ‘owl_write’:
+/home/travis/build/open-watcom/open-watcom-v2/bld/as/c/obj.c:114:16: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+     posix_write( OWLF2FH( f ), buff, size );
+                ^
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stand/sections.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_MIPS    -D_STANDALONE_   -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/mps/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/as/c/sections.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stand/options.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_MIPS    -D_STANDALONE_   -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/mps/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/as/c/options.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stand/preproc.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_MIPS    -D_STANDALONE_   -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/mps/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/cpp/c/preproc.c
@@ -1303,12 +1311,12 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 bwrc -q -xb -r -bt=windows -zk0 -D__UNIX__ -D__LINUX__ -D_M_X64 -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_MIPS    -D_STANDALONE_ /home/travis/build/open-watcom/open-watcom-v2/bld/as/h/as.rc -fo=wresui.res
 gcc -pipe  -O -g -o bwasmps.exe  -Wl,-Map,bwasmps.map stand/asexpr.obj stand/asopernd.obj stand/asmem.obj stand/asutils.obj stand/asregs.obj stand/assymbol.obj stand/asdrectv.obj stand/asdirop.obj stand/asnumlab.obj stand/ashash.obj stand/asmsg.obj stand/mipsfmt.obj stand/mipsins.obj stand/asytab.obj stand/aslexyy.obj stand/main.obj stand/obj.obj stand/sections.obj stand/options.obj stand/preproc.obj stand/ppexpr.obj stand/ppmacro.obj stand/ppmem.obj stand/ppenv.obj stand/pathlist.obj stand/trmemcvr.obj /home/travis/build/open-watcom/open-watcom-v2/bld/owl/binbuild/owl.lib /home/travis/build/open-watcom/open-watcom-v2/bld/wres/binbuild/wres.lib /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
 bwstrip -q -a -r bwasmps.exe . wresui.res
-====== 20:39:36 /home/travis/build/open-watcom/open-watcom-v2/bld/as/mps ======
+====== 18:47:41 /home/travis/build/open-watcom/open-watcom-v2/bld/as/mps ======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/as/mps/binbuild/bwasmps.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwasmps'...
-====== 20:39:36 /home/travis/build/open-watcom/open-watcom-v2/bld/as/mps ======
+====== 18:47:41 /home/travis/build/open-watcom/open-watcom-v2/bld/as/mps ======
 **** Building the wasppc bootstrap
-====== 20:39:36 /home/travis/build/open-watcom/open-watcom-v2/bld/as/ppc ======
-= 20:39:36 /home/travis/build/open-watcom/open-watcom-v2/bld/as/ppc/binbuild ==
+====== 18:47:41 /home/travis/build/open-watcom/open-watcom-v2/bld/as/ppc ======
+= 18:47:41 /home/travis/build/open-watcom/open-watcom-v2/bld/as/ppc/binbuild ==
 wcpp -zk0 -D__UNIX__ -D__LINUX__ -D_M_X64 -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_PPC    -oasi_msg.tmp /home/travis/build/open-watcom/open-watcom-v2/bld/as/h/as.msg
 awk -v base=AS_MSG_BASE -f /home/travis/build/open-watcom/open-watcom-v2/build/makemsg.awk -v OUTFILE=asi_msg.gh asi_msg.tmp
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o asexpr.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_PPC     -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/ppc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/as/c/asexpr.c
@@ -1628,6 +1636,10 @@ scan_in.re:268:1: warning: label ‘yy1’ defined but not used [-Wunused-label]
  ^
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stand/main.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_PPC    -D_STANDALONE_   -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/ppc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/as/c/main.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stand/obj.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_PPC    -D_STANDALONE_   -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/ppc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/as/c/obj.c
+/home/travis/build/open-watcom/open-watcom-v2/bld/as/c/obj.c: In function ‘owl_write’:
+/home/travis/build/open-watcom/open-watcom-v2/bld/as/c/obj.c:114:16: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+     posix_write( OWLF2FH( f ), buff, size );
+                ^
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stand/sections.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_PPC    -D_STANDALONE_   -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/ppc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/as/c/sections.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stand/options.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_PPC    -D_STANDALONE_   -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/ppc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/as/c/options.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stand/preproc.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_PPC    -D_STANDALONE_   -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/ppc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/as/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/owl/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/cpp/c/preproc.c
@@ -1640,13 +1652,13 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 bwrc -q -xb -r -bt=windows -zk0 -D__UNIX__ -D__LINUX__ -D_M_X64 -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DAS_PPC    -D_STANDALONE_ /home/travis/build/open-watcom/open-watcom-v2/bld/as/h/as.rc -fo=wresui.res
 gcc -pipe  -O -g -o bwasppc.exe  -Wl,-Map,bwasppc.map stand/asexpr.obj stand/asopernd.obj stand/asmem.obj stand/asutils.obj stand/asregs.obj stand/assymbol.obj stand/asdrectv.obj stand/asdirop.obj stand/asnumlab.obj stand/ashash.obj stand/asmsg.obj stand/ppcfmt.obj stand/ppcins.obj stand/asytab.obj stand/aslexyy.obj stand/main.obj stand/obj.obj stand/sections.obj stand/options.obj stand/preproc.obj stand/ppexpr.obj stand/ppmacro.obj stand/ppmem.obj stand/ppenv.obj stand/pathlist.obj stand/trmemcvr.obj /home/travis/build/open-watcom/open-watcom-v2/bld/owl/binbuild/owl.lib /home/travis/build/open-watcom/open-watcom-v2/bld/wres/binbuild/wres.lib /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
 bwstrip -q -a -r bwasppc.exe . wresui.res
-====== 20:39:39 /home/travis/build/open-watcom/open-watcom-v2/bld/as/ppc ======
+====== 18:47:46 /home/travis/build/open-watcom/open-watcom-v2/bld/as/ppc ======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/as/ppc/binbuild/bwasppc.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwasppc'...
-====== 20:39:39 /home/travis/build/open-watcom/open-watcom-v2/bld/as/ppc ======
-======== 20:39:39 /home/travis/build/open-watcom/open-watcom-v2/bld/as ========
+====== 18:47:46 /home/travis/build/open-watcom/open-watcom-v2/bld/as/ppc ======
+======== 18:47:46 /home/travis/build/open-watcom/open-watcom-v2/bld/as ========
 **** Building the wasm bootstrap
-======= 20:39:39 /home/travis/build/open-watcom/open-watcom-v2/bld/wasm =======
-== 20:39:39 /home/travis/build/open-watcom/open-watcom-v2/bld/wasm/binbuild ===
+======= 18:47:46 /home/travis/build/open-watcom/open-watcom-v2/bld/wasm =======
+== 18:47:46 /home/travis/build/open-watcom/open-watcom-v2/bld/wasm/binbuild ===
 gcc -pipe -fno-asm -fno-common -fsigned-char   -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../mkopcod1.c -D_STANDALONE_ -I. -I"../h" -D__UNIX__ -D__FLAT__ -D__LINUX__ -D_M_X64 -D__LINUX_X64__ -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o ./mkopcod1.exe /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib  -Wl,-Map,mkopcod1.map
 ./mkopcod1.exe ../fullops.tok ../inlnops.tok asmops.gh
 gcc -pipe -fno-asm -fno-common -fsigned-char   -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../mkopcode.c -D_STANDALONE_ -I. -I"../h" -D__UNIX__ -D__FLAT__ -D__LINUX__ -D_M_X64 -D__LINUX_X64__ -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o ./mkopcode.exe /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib  -Wl,-Map,mkopcode.map
@@ -1718,30 +1730,30 @@ wsplice -t8 -f "pick((MSG_USAGE_BASE+%#%+), \"\", %s)" usagej.tmp end.tmp usagej
 bwrc -q -xb -r -bt=windows -zk0 -D__UNIX__ -D__LINUX__ -D_M_X64 -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" -D_STANDALONE_ ../h/wasm.rc -fo=wresui.res
 gcc -pipe  -O -g -o bwasm.exe  -Wl,-Map,bwasm.map main.obj write.obj fatal.obj womputil.obj direct.obj posndir.obj asmeval.obj asmalloc.obj asmmsg.obj wasmmsg.obj macro.obj condasm.obj breakout.obj asmstruc.obj asmexpnd.obj mangle.obj for.obj objio.obj carve.obj genmsomf.obj objrec.obj queue.obj fixup.obj lifix.obj asmins.obj asmscan.obj asmline.obj asmsym.obj tbyte.obj asmlabel.obj asmfixup.obj asmmatch.obj asmdata.obj asmjump.obj autodept.obj dostimet.obj queues.obj pathlist.obj  /home/travis/build/open-watcom/open-watcom-v2/bld/wres/binbuild/wres.lib /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
 bwstrip -q -a -r bwasm.exe . wresui.res
-======= 20:39:44 /home/travis/build/open-watcom/open-watcom-v2/bld/wasm =======
+======= 18:47:51 /home/travis/build/open-watcom/open-watcom-v2/bld/wasm =======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/wasm/binbuild/bwasm.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwasm'...
-======= 20:39:44 /home/travis/build/open-watcom/open-watcom-v2/bld/wasm =======
+======= 18:47:51 /home/travis/build/open-watcom/open-watcom-v2/bld/wasm =======
 **** Building the wcl386 bootstrap
-===== 20:39:44 /home/travis/build/open-watcom/open-watcom-v2/bld/wcl/386 ======
-= 20:39:44 /home/travis/build/open-watcom/open-watcom-v2/bld/wcl/386/binbuild =
+===== 18:47:51 /home/travis/build/open-watcom/open-watcom-v2/bld/wcl/386 ======
+= 18:47:51 /home/travis/build/open-watcom/open-watcom-v2/bld/wcl/386/binbuild =
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o clcommon.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DWCL386    -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem" -I. -I.. -I"../../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/clcommon.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o wcl.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DWCL386     -I. -I.. -I"../../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/wcl.c
 gcc -pipe  -O -g -o bwcl386.exe  -Wl,-Map,bwcl386.map clcommon.obj wcl.obj  /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-===== 20:39:44 /home/travis/build/open-watcom/open-watcom-v2/bld/wcl/386 ======
+===== 18:47:51 /home/travis/build/open-watcom/open-watcom-v2/bld/wcl/386 ======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/wcl/386/binbuild/bwcl386.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwcl386'...
-===== 20:39:44 /home/travis/build/open-watcom/open-watcom-v2/bld/wcl/386 ======
+===== 18:47:51 /home/travis/build/open-watcom/open-watcom-v2/bld/wcl/386 ======
 **** Building the wcl bootstrap
-===== 20:39:44 /home/travis/build/open-watcom/open-watcom-v2/bld/wcl/i86 ======
-= 20:39:44 /home/travis/build/open-watcom/open-watcom-v2/bld/wcl/i86/binbuild =
+===== 18:47:51 /home/travis/build/open-watcom/open-watcom-v2/bld/wcl/i86 ======
+= 18:47:51 /home/travis/build/open-watcom/open-watcom-v2/bld/wcl/i86/binbuild =
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o clcommon.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DWCLI86    -I"/home/travis/build/open-watcom/open-watcom-v2/bld/trmem" -I. -I.. -I"../../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/clcommon.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o wcl.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DWCLI86     -I. -I.. -I"../../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/wcl.c
 gcc -pipe  -O -g -o bwcl.exe  -Wl,-Map,bwcl.map clcommon.obj wcl.obj  /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-===== 20:39:44 /home/travis/build/open-watcom/open-watcom-v2/bld/wcl/i86 ======
+===== 18:47:52 /home/travis/build/open-watcom/open-watcom-v2/bld/wcl/i86 ======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/wcl/i86/binbuild/bwcl.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwcl'...
-===== 20:39:44 /home/travis/build/open-watcom/open-watcom-v2/bld/wcl/i86 ======
+===== 18:47:52 /home/travis/build/open-watcom/open-watcom-v2/bld/wcl/i86 ======
 **** Building the cfloat bootstrap
-====== 20:39:44 /home/travis/build/open-watcom/open-watcom-v2/bld/cfloat ======
-= 20:39:44 /home/travis/build/open-watcom/open-watcom-v2/bld/cfloat/binbuild ==
+====== 18:47:52 /home/travis/build/open-watcom/open-watcom-v2/bld/cfloat ======
+= 18:47:52 /home/travis/build/open-watcom/open-watcom-v2/bld/cfloat/binbuild ==
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o cfconv.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/cfloat/c/cfconv.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o cfdiv.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/cfloat/c/cfdiv.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o cfinvers.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/cfloat/c/cfinvers.c
@@ -1752,10 +1764,10 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o cfutil.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/cfloat/c/cfutil.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o u32moddi.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/cfloat/c/u32moddi.c
 ar crs cf.lib cfconv.obj cfdiv.obj cfinvers.obj cfmath.obj cfmem.obj cfmul.obj cftof.obj cfutil.obj u32moddi.obj
-====== 20:39:45 /home/travis/build/open-watcom/open-watcom-v2/bld/cfloat ======
+====== 18:47:52 /home/travis/build/open-watcom/open-watcom-v2/bld/cfloat ======
 **** Building the cg386 bootstrap
-=== 20:39:45 /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/386 ===
-= 20:39:45 /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/386/binbuild ==
+=== 18:47:52 /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/386 ===
+= 18:47:52 /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/386/binbuild ==
 gcc -pipe -fno-asm -fno-common -fsigned-char   -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/c/bitset.c -D__UNIX__ -D__FLAT__ -D__LINUX__ -D_M_X64 -D__LINUX_X64__ -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o ./bitset.exe /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib  -Wl,-Map,bitset.map
 ./bitset.exe 128 _GBit global_bit_set gbit.gh
 ./bitset.exe 32 _LBit local_bit_set lbit.gh
@@ -1935,10 +1947,10 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o doblips.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DBY_CG     -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/386/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cfloat/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/comp_cfg/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/cg/c/doblips.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stack.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DBY_CG     -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/386/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cfloat/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/comp_cfg/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/cg/c/stack.c
 ar crs cg386lnx.lib objio.obj memlimit.obj envvar.obj onexit.obj qtimer.obj qblip.obj cgmemmgr.obj doblips.obj stack.obj
-=== 20:39:58 /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/386 ===
+=== 18:48:09 /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/386 ===
 **** Building the cgi86 bootstrap
-=== 20:39:58 /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/i86 ===
-= 20:39:58 /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/i86/binbuild ==
+=== 18:48:09 /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/i86 ===
+= 18:48:09 /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/i86/binbuild ==
 gcc -pipe -fno-asm -fno-common -fsigned-char   -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/c/bitset.c -D__UNIX__ -D__FLAT__ -D__LINUX__ -D_M_X64 -D__LINUX_X64__ -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o ./bitset.exe /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib  -Wl,-Map,bitset.map
 ./bitset.exe 128 _GBit global_bit_set gbit.gh
 ./bitset.exe 32 _LBit local_bit_set lbit.gh
@@ -2115,10 +2127,10 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o doblips.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DBY_CG     -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/i86/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cfloat/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/comp_cfg/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/cg/c/doblips.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o stack.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DBY_CG     -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/i86/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cfloat/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/comp_cfg/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/cg/c/stack.c
 ar crs cgi86lnx.lib objio.obj memlimit.obj envvar.obj onexit.obj qtimer.obj qblip.obj cgmemmgr.obj doblips.obj stack.obj
-=== 20:40:12 /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/i86 ===
+=== 18:48:25 /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/i86 ===
 **** Building the wcc386 bootstrap
-====== 20:40:12 /home/travis/build/open-watcom/open-watcom-v2/bld/cc/386 ======
-= 20:40:12 /home/travis/build/open-watcom/open-watcom-v2/bld/cc/386/binbuild ==
+====== 18:48:25 /home/travis/build/open-watcom/open-watcom-v2/bld/cc/386 ======
+= 18:48:25 /home/travis/build/open-watcom/open-watcom-v2/bld/cc/386/binbuild ==
 optencod -i -n -q  ../../gml/options.gml . . usage.gh 386  linux
 msgencod -s -i -ip -q -g ../../gml/cerrs.gml msgtxt.gh msgdefs.gh msgattr.gh
 findhash -q -e ",OPR_NOP" ../../h/c.key ../../h/pc.key ../../h/seh.key
@@ -2223,12 +2235,12 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o idedrv.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DIDE_PGM    -DSTATIC_LINKAGE -I. -I.. -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/386/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wasm/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/comp_cfg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/c/idedrv.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o maindrv.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DIDE_PGM    -DDLL_NAME=bwccd386 -I. -I.. -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/386/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wasm/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/comp_cfg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/maindrv.c
 gcc -pipe  -O -g -o bwcc386.exe  -Wl,-Map,bwcc386.map ascii.obj asmstmt.obj casian.obj ccheck.obj ccmain.obj cdata.obj cdebug.obj cdecl1.obj cdecl2.obj cdinit.obj cdump.obj cems.obj cenum.obj cerror.obj cfeinfo.obj cinfo.obj cmac1.obj cmac2.obj cmemmgr.obj cmodel.obj cmsg.obj cname.obj coptions.obj caux.obj cpragma.obj cpurge.obj cscan.obj csizeof.obj cstats.obj cstring.obj csym.obj ctimepc.obj ctoken.obj ctype.obj cusage.obj cutil.obj ftoa.obj strsave.obj watcom.obj cgetch.obj cmacadd.obj asmalloc.obj asmmsg.obj jis2unic.obj pchdr.obj dwarf.obj browsio.obj ideentry.obj idemsgfm.obj idemsgpr.obj intlload.obj autodept.obj cexpr.obj cfold.obj cmath.obj cstmt.obj cgen.obj cgendata.obj exprtree.obj treewalk.obj pathlist.obj mngless.obj asmins.obj asmscan.obj asmline.obj asmsym.obj tbyte.obj asmlabel.obj asmfixup.obj asmmatch.obj asmdata.obj asmjump.obj asmexpnd.obj asmeval.obj cpragx86.obj prag386.obj idedrv.obj maindrv.obj  /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/386/binbuild/cg386.lib /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/386/binbuild/cg386lnx.lib /home/travis/build/open-watcom/open-watcom-v2/bld/cfloat/binbuild/cf.lib /home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/binbuild/dwarfw.lib /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-====== 20:40:21 /home/travis/build/open-watcom/open-watcom-v2/bld/cc/386 ======
+====== 18:48:36 /home/travis/build/open-watcom/open-watcom-v2/bld/cc/386 ======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/cc/386/binbuild/bwcc386.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwcc386'...
-====== 20:40:21 /home/travis/build/open-watcom/open-watcom-v2/bld/cc/386 ======
+====== 18:48:36 /home/travis/build/open-watcom/open-watcom-v2/bld/cc/386 ======
 **** Building the wcc bootstrap
-====== 20:40:21 /home/travis/build/open-watcom/open-watcom-v2/bld/cc/i86 ======
-= 20:40:21 /home/travis/build/open-watcom/open-watcom-v2/bld/cc/i86/binbuild ==
+====== 18:48:36 /home/travis/build/open-watcom/open-watcom-v2/bld/cc/i86 ======
+= 18:48:36 /home/travis/build/open-watcom/open-watcom-v2/bld/cc/i86/binbuild ==
 optencod -i -n -q  ../../gml/options.gml . . usage.gh i86  linux
 msgencod -s -i -ip -q -g ../../gml/cerrs.gml msgtxt.gh msgdefs.gh msgattr.gh
 findhash -q -e ",OPR_NOP" ../../h/c.key ../../h/pc.key ../../h/seh.key
@@ -2333,12 +2345,12 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o idedrv.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DIDE_PGM    -DSTATIC_LINKAGE -I. -I.. -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/i86/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wasm/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/comp_cfg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/c/idedrv.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o maindrv.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DIDE_PGM    -DDLL_NAME=bwccd -I. -I.. -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/i86/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wasm/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/comp_cfg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/maindrv.c
 gcc -pipe  -O -g -o bwcc.exe  -Wl,-Map,bwcc.map ascii.obj asmstmt.obj casian.obj ccheck.obj ccmain.obj cdata.obj cdebug.obj cdecl1.obj cdecl2.obj cdinit.obj cdump.obj cems.obj cenum.obj cerror.obj cfeinfo.obj cinfo.obj cmac1.obj cmac2.obj cmemmgr.obj cmodel.obj cmsg.obj cname.obj coptions.obj caux.obj cpragma.obj cpurge.obj cscan.obj csizeof.obj cstats.obj cstring.obj csym.obj ctimepc.obj ctoken.obj ctype.obj cusage.obj cutil.obj ftoa.obj strsave.obj watcom.obj cgetch.obj cmacadd.obj asmalloc.obj asmmsg.obj jis2unic.obj pchdr.obj dwarf.obj browsio.obj ideentry.obj idemsgfm.obj idemsgpr.obj intlload.obj autodept.obj cexpr.obj cfold.obj cmath.obj cstmt.obj cgen.obj cgendata.obj exprtree.obj treewalk.obj pathlist.obj mngless.obj asmins.obj asmscan.obj asmline.obj asmsym.obj tbyte.obj asmlabel.obj asmfixup.obj asmmatch.obj asmdata.obj asmjump.obj asmexpnd.obj asmeval.obj cpragx86.obj pragi86.obj idedrv.obj maindrv.obj  /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/i86/binbuild/cgi86.lib /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/i86/binbuild/cgi86lnx.lib /home/travis/build/open-watcom/open-watcom-v2/bld/cfloat/binbuild/cf.lib /home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/binbuild/dwarfw.lib /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-====== 20:40:30 /home/travis/build/open-watcom/open-watcom-v2/bld/cc/i86 ======
+====== 18:48:47 /home/travis/build/open-watcom/open-watcom-v2/bld/cc/i86 ======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/cc/i86/binbuild/bwcc.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwcc'...
-====== 20:40:30 /home/travis/build/open-watcom/open-watcom-v2/bld/cc/i86 ======
+====== 18:48:47 /home/travis/build/open-watcom/open-watcom-v2/bld/cc/i86 ======
 **** Building the wpp386 bootstrap
-=== 20:40:30 /home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/386 ===
-= 20:40:30 /home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/386/binbuild ==
+=== 18:48:47 /home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/386 ===
+= 18:48:47 /home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/386/binbuild ==
 msgencod -s -i -q ../../gml/messages.gml errmsgs1.gh errmsgs2.gh errlevel.gh
 gcc -pipe -fno-asm -fno-common -fsigned-char  -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wasm/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/icmask.c -D__UNIX__ -D__FLAT__ -D__LINUX__ -D_M_X64 -D__LINUX_X64__ -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o ./icmask.exe /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib  -Wl,-Map,icmask.map -I"../../h"
 ../../c/icmask.c: In function ‘indirEnvOrFile’:
@@ -2855,12 +2867,12 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o idedrv.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DIDE_PGM    -DSTATIC_LINKAGE -I. -I.. -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/386/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wasm/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/comp_cfg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/brinfo/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/c/idedrv.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o maindrv.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DIDE_PGM     -I. -I.. -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/386/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wasm/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/comp_cfg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/brinfo/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/maindrv.c
 gcc -pipe  -O -g -o bwpp386.exe  -Wl,-Map,bwpp386.map analcall.obj analcast.obj analclss.obj analconv.obj analctor.obj anallval.obj analnew.obj analnode.obj analpcnv.obj analretn.obj analtyid.obj analtype.obj analudc.obj analyse.obj arglist.obj ascii.obj asmstmt.obj autodep.obj browsio.obj calldiag.obj callgrph.obj callopt.obj carve.obj casian.obj caux.obj cdopt.obj cgbackhn.obj cgbkarel.obj cgbkbpos.obj cgbkcdpm.obj cgbkcbak.obj cgbkcgrf.obj cgbkclab.obj cgbkcmds.obj cgbkcond.obj cgbkcstb.obj cgbkcstk.obj cgbkdecl.obj cgbkexpr.obj cgbkfctl.obj cgbkftab.obj cgbkibrp.obj cgbklabs.obj cgbkmain.obj cgbkobin.obj cgbkretn.obj cgbkrreg.obj cgbkrtti.obj cgbkrvar.obj cgbkscop.obj cgbkstab.obj cgbkstrn.obj cgbksvar.obj cgbkswit.obj cgbkthrw.obj cgbktsig.obj cgbkutil.obj cgfront.obj cginfo.obj cginimps.obj cginlibs.obj cginmisc.obj cgio.obj cgiobuff.obj cgsegid.obj cgtype.obj class.obj cmac1.obj cmac2.obj cmacsupp.obj cmacadd.obj cmdln.obj cmdlnany.obj cmdlnbat.obj cmdlnctx.obj cmdlnprs.obj cmdscan.obj conpool.obj context.obj convctl.obj convdiag.obj cppexit.obj cpragma.obj cscan.obj ctimepc.obj cusage.obj datadtor.obj datainit.obj dbgsupp.obj decl.obj defarg.obj dgfront.obj dirgraph.obj dmpobjmd.obj dupnode.obj dwio.obj dwiobuff.obj dwarf.obj dyncast.obj enum.obj except.obj extrf86.obj floatsup.obj fmtmsg.obj fmttype.obj fmtsym.obj fname.obj fnbody.obj fnname.obj fnovload.obj fnovrank.obj typerank.obj fold.obj globdata.obj gstack.obj hfile.obj hashtab.obj i64supp.obj ialias.obj icemit.obj ideentry.obj idemsgfm.obj idemsgpr.obj initfini.obj initref.obj iosupp.obj jis2unic.obj keyword.obj label.obj linkage.obj mainproc.obj membptr.obj memmgr.obj message.obj mngless.obj module.obj name.obj namspace.obj objmodel.obj opovload.obj pcheader.obj plusplus.obj ppexpn.obj preproc.obj pstk.obj ptree.obj ptreedec.obj reposit.obj rewrite.obj ring.obj ringcarv.obj ringfns.obj ringname.obj rtfun.obj rtngen.obj rtti.obj scope.obj segment.obj srcfile.obj specfuns.obj stack.obj stacksr.obj stats.obj stringl.obj symbol.obj symdbg.obj symlocn.obj sysdep.obj template.obj tempor.obj thunk.obj tokenbuf.obj tokens.obj type.obj typecomp.obj typesig.obj utility.obj vbuf.obj vfun.obj vstk.obj watcom.obj ytab.obj autodept.obj pathlist.obj intlload.obj asmalloc.obj asmmsg.obj asmins.obj asmscan.obj asmline.obj asmsym.obj tbyte.obj asmlabel.obj asmfixup.obj asmmatch.obj asmdata.obj asmjump.obj asmexpnd.obj asmeval.obj cmdlnx86.obj cpragx86.obj prag386.obj idedrv.obj maindrv.obj  /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/386/binbuild/cg386.lib /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/386/binbuild/cg386lnx.lib /home/travis/build/open-watcom/open-watcom-v2/bld/cfloat/binbuild/cf.lib /home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/binbuild/dwarfw.lib /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-=== 20:40:57 /home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/386 ===
+=== 18:49:22 /home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/386 ===
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/386/binbuild/bwpp386.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwpp386'...
-=== 20:40:57 /home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/386 ===
+=== 18:49:22 /home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/386 ===
 **** Building the wpp bootstrap
-=== 20:40:57 /home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/i86 ===
-= 20:40:57 /home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/i86/binbuild ==
+=== 18:49:22 /home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/i86 ===
+= 18:49:22 /home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/i86/binbuild ==
 msgencod -s -i -q ../../gml/messages.gml errmsgs1.gh errmsgs2.gh errlevel.gh
 gcc -pipe -fno-asm -fno-common -fsigned-char  -I. -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wasm/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/icmask.c -D__UNIX__ -D__FLAT__ -D__LINUX__ -D_M_X64 -D__LINUX_X64__ -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o ./icmask.exe /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib  -Wl,-Map,icmask.map -I"../../h"
 ../../c/icmask.c: In function ‘indirEnvOrFile’:
@@ -3366,20 +3378,20 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o idedrv.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DIDE_PGM    -DSTATIC_LINKAGE -I. -I.. -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/i86/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wasm/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/comp_cfg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/brinfo/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/c/idedrv.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o maindrv.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DIDE_PGM     -I. -I.. -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/i86/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wasm/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/comp_cfg/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/fe_misc/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/brinfo/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/maindrv.c
 gcc -pipe  -O -g -o bwpp.exe  -Wl,-Map,bwpp.map analcall.obj analcast.obj analclss.obj analconv.obj analctor.obj anallval.obj analnew.obj analnode.obj analpcnv.obj analretn.obj analtyid.obj analtype.obj analudc.obj analyse.obj arglist.obj ascii.obj asmstmt.obj autodep.obj browsio.obj calldiag.obj callgrph.obj callopt.obj carve.obj casian.obj caux.obj cdopt.obj cgbackhn.obj cgbkarel.obj cgbkbpos.obj cgbkcdpm.obj cgbkcbak.obj cgbkcgrf.obj cgbkclab.obj cgbkcmds.obj cgbkcond.obj cgbkcstb.obj cgbkcstk.obj cgbkdecl.obj cgbkexpr.obj cgbkfctl.obj cgbkftab.obj cgbkibrp.obj cgbklabs.obj cgbkmain.obj cgbkobin.obj cgbkretn.obj cgbkrreg.obj cgbkrtti.obj cgbkrvar.obj cgbkscop.obj cgbkstab.obj cgbkstrn.obj cgbksvar.obj cgbkswit.obj cgbkthrw.obj cgbktsig.obj cgbkutil.obj cgfront.obj cginfo.obj cginimps.obj cginlibs.obj cginmisc.obj cgio.obj cgiobuff.obj cgsegid.obj cgtype.obj class.obj cmac1.obj cmac2.obj cmacsupp.obj cmacadd.obj cmdln.obj cmdlnany.obj cmdlnbat.obj cmdlnctx.obj cmdlnprs.obj cmdscan.obj conpool.obj context.obj convctl.obj convdiag.obj cppexit.obj cpragma.obj cscan.obj ctimepc.obj cusage.obj datadtor.obj datainit.obj dbgsupp.obj decl.obj defarg.obj dgfront.obj dirgraph.obj dmpobjmd.obj dupnode.obj dwio.obj dwiobuff.obj dwarf.obj dyncast.obj enum.obj except.obj extrf86.obj floatsup.obj fmtmsg.obj fmttype.obj fmtsym.obj fname.obj fnbody.obj fnname.obj fnovload.obj fnovrank.obj typerank.obj fold.obj globdata.obj gstack.obj hfile.obj hashtab.obj i64supp.obj ialias.obj icemit.obj ideentry.obj idemsgfm.obj idemsgpr.obj initfini.obj initref.obj iosupp.obj jis2unic.obj keyword.obj label.obj linkage.obj mainproc.obj membptr.obj memmgr.obj message.obj mngless.obj module.obj name.obj namspace.obj objmodel.obj opovload.obj pcheader.obj plusplus.obj ppexpn.obj preproc.obj pstk.obj ptree.obj ptreedec.obj reposit.obj rewrite.obj ring.obj ringcarv.obj ringfns.obj ringname.obj rtfun.obj rtngen.obj rtti.obj scope.obj segment.obj srcfile.obj specfuns.obj stack.obj stacksr.obj stats.obj stringl.obj symbol.obj symdbg.obj symlocn.obj sysdep.obj template.obj tempor.obj thunk.obj tokenbuf.obj tokens.obj type.obj typecomp.obj typesig.obj utility.obj vbuf.obj vfun.obj vstk.obj watcom.obj ytab.obj autodept.obj pathlist.obj intlload.obj asmalloc.obj asmmsg.obj asmins.obj asmscan.obj asmline.obj asmsym.obj tbyte.obj asmlabel.obj asmfixup.obj asmmatch.obj asmdata.obj asmjump.obj asmexpnd.obj asmeval.obj cmdlnx86.obj cpragx86.obj pragi86.obj idedrv.obj maindrv.obj  /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/i86/binbuild/cgi86.lib /home/travis/build/open-watcom/open-watcom-v2/bld/cg/intel/i86/binbuild/cgi86lnx.lib /home/travis/build/open-watcom/open-watcom-v2/bld/cfloat/binbuild/cf.lib /home/travis/build/open-watcom/open-watcom-v2/bld/dwarf/dw/binbuild/dwarfw.lib /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-=== 20:41:25 /home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/i86 ===
+=== 18:49:55 /home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/i86 ===
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/i86/binbuild/bwpp.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwpp'...
-=== 20:41:25 /home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/i86 ===
+=== 18:49:55 /home/travis/build/open-watcom/open-watcom-v2/bld/plusplus/i86 ===
 **** Building the aliasgen bootstrap
-===== 20:41:25 /home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc =====
-= 20:41:25 /home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc/binbuild ==
+===== 18:49:55 /home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc =====
+= 18:49:55 /home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc/binbuild ==
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o aliasgen.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__        -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/aliasgen.c
 gcc -pipe  -O -g -o aliasgen.exe  -Wl,-Map,aliasgen.map aliasgen.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-===== 20:41:25 /home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc =====
+===== 18:49:55 /home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc =====
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc/binbuild/aliasgen.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/aliasgen'...
-===== 20:41:25 /home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc =====
+===== 18:49:55 /home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc =====
 **** Building the ssl bootstrap
-======= 20:41:25 /home/travis/build/open-watcom/open-watcom-v2/bld/ssl ========
-=== 20:41:25 /home/travis/build/open-watcom/open-watcom-v2/bld/ssl/binbuild ===
+======= 18:49:55 /home/travis/build/open-watcom/open-watcom-v2/bld/ssl ========
+=== 18:49:55 /home/travis/build/open-watcom/open-watcom-v2/bld/ssl/binbuild ===
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o ssl.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/ssl.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o ssldecl.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/ssldecl.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o sslrule.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/sslrule.c
@@ -3392,12 +3404,12 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o ppenv.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/cpp/c/ppenv.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o pathlist.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/cpp/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/c/pathlist.c
 gcc -pipe  -O -g -o ssl.exe  -Wl,-Map,ssl.map ssl.obj ssldecl.obj sslrule.obj sslsym.obj sslgen.obj preproc.obj ppexpr.obj ppmacro.obj ppmem.obj ppenv.obj pathlist.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-======= 20:41:26 /home/travis/build/open-watcom/open-watcom-v2/bld/ssl ========
+======= 18:49:57 /home/travis/build/open-watcom/open-watcom-v2/bld/ssl ========
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/ssl/binbuild/ssl.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/ssl'...
-======= 20:41:26 /home/travis/build/open-watcom/open-watcom-v2/bld/ssl ========
+======= 18:49:57 /home/travis/build/open-watcom/open-watcom-v2/bld/ssl ========
 **** Building the cwc bootstrap
-=== 20:41:26 /home/travis/build/open-watcom/open-watcom-v2/bld/causeway/cwc ===
-= 20:41:26 /home/travis/build/open-watcom/open-watcom-v2/bld/causeway/cwc/binbuild ==
+=== 18:49:57 /home/travis/build/open-watcom/open-watcom-v2/bld/causeway/cwc ===
+= 18:49:57 /home/travis/build/open-watcom/open-watcom-v2/bld/causeway/cwc/binbuild ==
 gcc -pipe -fno-asm -fno-common -fsigned-char   -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/mkcode.c -D__UNIX__ -D__FLAT__ -D__LINUX__ -D_M_X64 -D__LINUX_X64__ -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o ./mkcode.exe /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib  -Wl,-Map,mkcode.map
 ../../c/mkcode.c: In function ‘main’:
 ../../c/mkcode.c:70:9: warning: ignoring return value of ‘read’, declared with attribute warn_unused_result [-Wunused-result]
@@ -3421,12 +3433,12 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
      fread( fimg + ImageLen + sizeof( exe_header ) - 1, exe_header.num_relocs, 4, f );
           ^
 gcc -pipe  -O -g -o cwc.exe  -Wl,-Map,cwc.map cwc.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-=== 20:41:26 /home/travis/build/open-watcom/open-watcom-v2/bld/causeway/cwc ===
+=== 18:49:57 /home/travis/build/open-watcom/open-watcom-v2/bld/causeway/cwc ===
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/causeway/cwc/binbuild/cwc.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bcwc'...
-=== 20:41:26 /home/travis/build/open-watcom/open-watcom-v2/bld/causeway/cwc ===
+=== 18:49:57 /home/travis/build/open-watcom/open-watcom-v2/bld/causeway/cwc ===
 **** Building the parsedlg bootstrap
-===== 20:41:26 /home/travis/build/open-watcom/open-watcom-v2/bld/parsedlg =====
-= 20:41:26 /home/travis/build/open-watcom/open-watcom-v2/bld/parsedlg/binbuild ==
+===== 18:49:57 /home/travis/build/open-watcom/open-watcom-v2/bld/parsedlg =====
+= 18:49:57 /home/travis/build/open-watcom/open-watcom-v2/bld/parsedlg/binbuild ==
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o parsedlg.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/parsedlg.c
 ../c/parsedlg.c: In function ‘process_f_option’:
 ../c/parsedlg.c:150:22: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
@@ -3440,31 +3452,31 @@ In function ‘strncat’,
    return __builtin___strncat_chk (__dest, __src, __len, __bos (__dest));
    ^
 gcc -pipe  -O -g -o parsedlg.exe  -Wl,-Map,parsedlg.map parsedlg.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-===== 20:41:27 /home/travis/build/open-watcom/open-watcom-v2/bld/parsedlg =====
+===== 18:49:57 /home/travis/build/open-watcom/open-watcom-v2/bld/parsedlg =====
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/parsedlg/binbuild/parsedlg.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/parsedlg'...
-===== 20:41:27 /home/travis/build/open-watcom/open-watcom-v2/bld/parsedlg =====
+===== 18:49:57 /home/travis/build/open-watcom/open-watcom-v2/bld/parsedlg =====
 **** Building the edbind bootstrap
-===== 20:41:27 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/bind ======
-= 20:41:27 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/bind/binbuild =
+===== 18:49:57 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/bind ======
+= 18:49:57 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/bind/binbuild =
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o edbind.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/edbind.c
 gcc -pipe  -O -g -o edbind.exe  -Wl,-Map,edbind.map edbind.obj  /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-===== 20:41:27 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/bind ======
+===== 18:49:57 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/bind ======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/vi/bind/binbuild/edbind.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bedbind'...
-===== 20:41:27 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/bind ======
+===== 18:49:57 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/bind ======
 **** Building the victl bootstrap
-====== 20:41:27 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/ctl ======
-= 20:41:27 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/ctl/binbuild ==
+====== 18:49:57 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/ctl ======
+= 18:49:57 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/ctl/binbuild ==
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o parsectl.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__        -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../parsectl.c
 gcc -pipe  -O -g -o parsectl.exe  -Wl,-Map,parsectl.map parsectl.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o parsedyn.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__        -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../parsedyn.c
 gcc -pipe  -O -g -o parsedyn.exe  -Wl,-Map,parsedyn.map parsedyn.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-====== 20:41:27 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/ctl ======
+====== 18:49:58 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/ctl ======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/vi/ctl/binbuild/parsectl.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/parsectl'...
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/vi/ctl/binbuild/parsedyn.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/parsedyn'...
-====== 20:41:27 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/ctl ======
+====== 18:49:58 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/ctl ======
 **** Building the vicomp bootstrap
-==== 20:41:27 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/vicomp =====
-= 20:41:27 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/vicomp/binbuild =
+==== 18:49:58 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/vicomp =====
+= 18:49:58 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/vicomp/binbuild =
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o vicomp.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DVICOMP     -I. -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/posix/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/vicomp.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o addstr.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DVICOMP     -I. -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/posix/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/addstr.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o srcgen.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DVICOMP     -I. -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/posix/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/srcgen.c
@@ -3481,12 +3493,12 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o srcvar.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DVICOMP     -I. -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/posix/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/srcvar.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o parse.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__ -DVICOMP     -I. -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/posix/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../../c/parse.c
 gcc -pipe  -O -g -o vicomp.exe  -Wl,-Map,vicomp.map vicomp.obj addstr.obj srcgen.obj srclabel.obj printf.obj srccs.obj srcdata.obj pdata.obj exdata.obj mapkey.obj dat.obj clset.obj llrtns.obj srcvar.obj parse.obj  /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-==== 20:41:28 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/vicomp =====
+==== 18:49:59 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/vicomp =====
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/vi/vicomp/binbuild/vicomp.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/vicomp'...
-==== 20:41:28 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/vicomp =====
+==== 18:49:59 /home/travis/build/open-watcom/open-watcom-v2/bld/vi/vicomp =====
 **** Building the omftools bootstrap
-===== 20:41:28 /home/travis/build/open-watcom/open-watcom-v2/bld/omftools =====
-= 20:41:28 /home/travis/build/open-watcom/open-watcom-v2/bld/omftools/binbuild ==
+===== 18:49:59 /home/travis/build/open-watcom/open-watcom-v2/bld/omftools =====
+= 18:49:59 /home/travis/build/open-watcom/open-watcom-v2/bld/omftools/binbuild ==
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o objchg.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/objchg.c
 ../c/objchg.c: In function ‘ProcFile’:
 ../c/objchg.c:417:18: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
@@ -3518,16 +3530,16 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe  -O -g -o objxdef.exe  -Wl,-Map,objxdef.map objxdef.obj misc.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o objxref.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/objxref.c
 gcc -pipe  -O -g -o objxref.exe  -Wl,-Map,objxref.map objxref.obj hashtab.obj misc.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-===== 20:41:28 /home/travis/build/open-watcom/open-watcom-v2/bld/omftools =====
+===== 18:49:59 /home/travis/build/open-watcom/open-watcom-v2/bld/omftools =====
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/omftools/binbuild/objchg.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/objchg'...
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/omftools/binbuild/objfind.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/objfind'...
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/omftools/binbuild/objlist.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/objlist'...
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/omftools/binbuild/objxdef.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/objxdef'...
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/omftools/binbuild/objxref.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/objxref'...
-===== 20:41:28 /home/travis/build/open-watcom/open-watcom-v2/bld/omftools =====
+===== 18:49:59 /home/travis/build/open-watcom/open-watcom-v2/bld/omftools =====
 **** Building the whpcvt bootstrap
-====== 20:41:28 /home/travis/build/open-watcom/open-watcom-v2/bld/whpcvt ======
-= 20:41:28 /home/travis/build/open-watcom/open-watcom-v2/bld/whpcvt/binbuild ==
+====== 18:49:59 /home/travis/build/open-watcom/open-watcom-v2/bld/whpcvt ======
+= 18:49:59 /home/travis/build/open-watcom/open-watcom-v2/bld/whpcvt/binbuild ==
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o whpcvt.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/whpcvt.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o rtf.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/rtf.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o ipf.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/ipf.c
@@ -3535,12 +3547,12 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o wiki.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/wiki.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o html.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/html.c
 gcc -pipe  -O -g -o whpcvt.exe  -Wl,-Map,whpcvt.map whpcvt.obj rtf.obj ipf.obj ib.obj wiki.obj html.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-====== 20:41:29 /home/travis/build/open-watcom/open-watcom-v2/bld/whpcvt ======
+====== 18:50:01 /home/travis/build/open-watcom/open-watcom-v2/bld/whpcvt ======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/whpcvt/binbuild/whpcvt.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/whpcvt'...
-====== 20:41:29 /home/travis/build/open-watcom/open-watcom-v2/bld/whpcvt ======
+====== 18:50:01 /home/travis/build/open-watcom/open-watcom-v2/bld/whpcvt ======
 **** Building the wbind bootstrap
-=== 20:41:29 /home/travis/build/open-watcom/open-watcom-v2/bld/win386/wbind ===
-= 20:41:29 /home/travis/build/open-watcom/open-watcom-v2/bld/win386/wbind/binbuild ==
+=== 18:50:01 /home/travis/build/open-watcom/open-watcom-v2/bld/win386/wbind ===
+= 18:50:01 /home/travis/build/open-watcom/open-watcom-v2/bld/win386/wbind/binbuild ==
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o wbind.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../wbind.c
 ../wbind.c: In function ‘main’:
 ../wbind.c:387:14: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
@@ -3557,12 +3569,12 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
      fread( &nh, 1, sizeof( nh ), fp );
           ^
 gcc -pipe  -O -g -o wbind.exe  -Wl,-Map,wbind.map wbind.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-=== 20:41:29 /home/travis/build/open-watcom/open-watcom-v2/bld/win386/wbind ===
+=== 18:50:01 /home/travis/build/open-watcom/open-watcom-v2/bld/win386/wbind ===
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/win386/wbind/binbuild/wbind.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwbind'...
-=== 20:41:29 /home/travis/build/open-watcom/open-watcom-v2/bld/win386/wbind ===
+=== 18:50:01 /home/travis/build/open-watcom/open-watcom-v2/bld/win386/wbind ===
 **** Building the dlgprs bootstrap
-== 20:41:29 /home/travis/build/open-watcom/open-watcom-v2/bld/browser/dlgprs ==
-= 20:41:29 /home/travis/build/open-watcom/open-watcom-v2/bld/browser/dlgprs/binbuild ==
+== 18:50:01 /home/travis/build/open-watcom/open-watcom-v2/bld/browser/dlgprs ==
+= 18:50:01 /home/travis/build/open-watcom/open-watcom-v2/bld/browser/dlgprs/binbuild ==
 yacc -b dlgy -d -db ../y/prsdlg.y ../cpp/yydriver.cpp >/dev/null
 sed -f ../static.sed dlgytab.c >dlgytab.cpp
 yacc -b bndy -d -db ../y/prsbnd.y ../cpp/yydriver.cpp >/dev/null
@@ -3578,12 +3590,12 @@ g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o chbffile.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I. -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../cpp/chbffile.cpp
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o mempool.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__     -I"/home/travis/build/open-watcom/open-watcom-v2/bld/browser/h" -I. -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/browser/cpp/mempool.cpp
 gcc -pipe  -O -g -o dlgprs.exe  -Wl,-Map,dlgprs.map bind.obj dialog.obj main.obj scanner.obj styles.obj bndytab.obj dlgytab.obj chfile.obj chbffile.obj mempool.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib  -lsupc++ -lstdc++
-== 20:41:31 /home/travis/build/open-watcom/open-watcom-v2/bld/browser/dlgprs ==
+== 18:50:03 /home/travis/build/open-watcom/open-watcom-v2/bld/browser/dlgprs ==
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/browser/dlgprs/binbuild/dlgprs.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/dlgprs'...
-== 20:41:31 /home/travis/build/open-watcom/open-watcom-v2/bld/browser/dlgprs ==
+== 18:50:03 /home/travis/build/open-watcom/open-watcom-v2/bld/browser/dlgprs ==
 **** Building the hcdos bootstrap
-====== 20:41:31 /home/travis/build/open-watcom/open-watcom-v2/bld/hcdos =======
-== 20:41:31 /home/travis/build/open-watcom/open-watcom-v2/bld/hcdos/binbuild ==
+====== 18:50:03 /home/travis/build/open-watcom/open-watcom-v2/bld/hcdos =======
+== 18:50:03 /home/travis/build/open-watcom/open-watcom-v2/bld/hcdos/binbuild ==
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o sorthelp.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/hlpview/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/ui/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/sorthelp.c
 ../c/sorthelp.c: In function ‘pass2’:
 ../c/sorthelp.c:643:14: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
@@ -3623,12 +3635,12 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o helpscan.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/hlpview/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/ui/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/hlpview/c/helpscan.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o helpmem.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/hlpview/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/ui/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/hlpview/c/helpmem.c
 gcc -pipe  -O -g -o hcdos.exe  -Wl,-Map,hcdos.map sorthelp.obj index.obj helpscan.obj helpmem.obj  /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-====== 20:41:31 /home/travis/build/open-watcom/open-watcom-v2/bld/hcdos =======
+====== 18:50:03 /home/travis/build/open-watcom/open-watcom-v2/bld/hcdos =======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/hcdos/binbuild/hcdos.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/hcdos'...
-====== 20:41:31 /home/travis/build/open-watcom/open-watcom-v2/bld/hcdos =======
+====== 18:50:03 /home/travis/build/open-watcom/open-watcom-v2/bld/hcdos =======
 **** Building the whc bootstrap
-====== 20:41:31 /home/travis/build/open-watcom/open-watcom-v2/bld/hcwin =======
-== 20:41:31 /home/travis/build/open-watcom/open-watcom-v2/bld/hcwin/binbuild ==
+====== 18:50:03 /home/travis/build/open-watcom/open-watcom-v2/bld/hcwin =======
+== 18:50:03 /home/travis/build/open-watcom/open-watcom-v2/bld/hcwin/binbuild ==
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o whc.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../cpp/whc.cpp
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o hpjread.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../cpp/hpjread.cpp
 ../cpp/hpjread.cpp: In constructor ‘HPJReader::HPJReader(HFSDirectory*, Pointers*, InFile*)’:
@@ -3701,12 +3713,12 @@ g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o compress.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../cpp/compress.cpp
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o parsing.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../cpp/parsing.cpp
 gcc -pipe  -O -g -o whc.exe  -Wl,-Map,whc.map whc.obj hpjread.obj hlpdir.obj btrees.obj myfile.obj baggage.obj system.obj font.obj context.obj ctxomap.obj ttlbtree.obj keywords.obj scanning.obj hcerrors.obj mem.obj topic.obj phrase.obj bmx.obj compress.obj parsing.obj   /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib  -lsupc++ -lstdc++
-====== 20:41:34 /home/travis/build/open-watcom/open-watcom-v2/bld/hcwin =======
+====== 18:50:07 /home/travis/build/open-watcom/open-watcom-v2/bld/hcwin =======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/hcwin/binbuild/whc.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwhc'...
-====== 20:41:34 /home/travis/build/open-watcom/open-watcom-v2/bld/hcwin =======
+====== 18:50:07 /home/travis/build/open-watcom/open-watcom-v2/bld/hcwin =======
 **** Building the wipfc bootstrap
-====== 20:41:34 /home/travis/build/open-watcom/open-watcom-v2/bld/wipfc =======
-== 20:41:34 /home/travis/build/open-watcom/open-watcom-v2/bld/wipfc/binbuild ==
+====== 18:50:07 /home/travis/build/open-watcom/open-watcom-v2/bld/wipfc =======
+== 18:50:07 /home/travis/build/open-watcom/open-watcom-v2/bld/wipfc/binbuild ==
 ../configure
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether build environment is sane... yes
@@ -4091,12 +4103,12 @@ g++ -DHAVE_CONFIG_H -I. -I..   -D __STDC_LIMIT_MACROS -I../cpp -I../../watcom/h 
 mv -f .deps/xmp.Tpo .deps/xmp.Po
 g++  -pipe -g -Wall   -o wipfc main.o compiler.o document.o env.o ipfbuff.o ipffile.o lexer.o bitmap.o btmpblk.o cecmd.o cell.o ctrlbtn.o ctrlgrp.o controls.o errors.o extfiles.o fnt.o fntcol.o fts.o gdword.o gdict.o gnames.o header.o index.o nls.o page.o strings.o synonym.o toc.o tocref.o util.o xref.o element.o text.o entity.o punct.o whtspc.o word.o tag.o acvwport.o artlink.o artwork.o brcmd.o caution.o cgraphic.o color.o ctrl.o ctrldef.o ddf.o dl.o docprof.o fig.o figcap.o fn.o font.o hdref.o hide.o hn.o hpn.o i1.o i2.o icmd.o isyn.o lines.o link.o lm.o lp.o note.o nt.o ol.o p.o parml.o pbutton.o rm.o sl.o table.o title.o ul.o warning.o xmp.o  
 mv wipfc wipfc.exe
-====== 20:42:07 /home/travis/build/open-watcom/open-watcom-v2/bld/wipfc =======
+====== 18:50:48 /home/travis/build/open-watcom/open-watcom-v2/bld/wipfc =======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/wipfc/binbuild/wipfc.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwipfc'...
-====== 20:42:07 /home/travis/build/open-watcom/open-watcom-v2/bld/wipfc =======
+====== 18:50:48 /home/travis/build/open-watcom/open-watcom-v2/bld/wipfc =======
 **** Building the bmp2eps bootstrap
-===== 20:42:07 /home/travis/build/open-watcom/open-watcom-v2/bld/bmp2eps ======
-= 20:42:07 /home/travis/build/open-watcom/open-watcom-v2/bld/bmp2eps/binbuild =
+===== 18:50:48 /home/travis/build/open-watcom/open-watcom-v2/bld/bmp2eps ======
+= 18:50:48 /home/travis/build/open-watcom/open-watcom-v2/bld/bmp2eps/binbuild =
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o bmeps.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/bmeps.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o bmepsm.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/bmepsm.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o bmepsoe.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/bmepsoe.c
@@ -4112,12 +4124,12 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
                                      fread( frow, frowbytes, 1, in );
                                           ^
 gcc -pipe  -O -g -o bmp2eps.exe  -Wl,-Map,bmp2eps.map bmeps.obj bmepsm.obj bmepsoe.obj bmpeps.obj  /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-===== 20:42:08 /home/travis/build/open-watcom/open-watcom-v2/bld/bmp2eps ======
+===== 18:50:49 /home/travis/build/open-watcom/open-watcom-v2/bld/bmp2eps ======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/bmp2eps/binbuild/bmp2eps.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bmp2eps'...
-===== 20:42:08 /home/travis/build/open-watcom/open-watcom-v2/bld/bmp2eps ======
+===== 18:50:49 /home/travis/build/open-watcom/open-watcom-v2/bld/bmp2eps ======
 **** Building the wclass bootstrap
-====== 20:42:08 /home/travis/build/open-watcom/open-watcom-v2/bld/wclass ======
-= 20:42:08 /home/travis/build/open-watcom/open-watcom-v2/bld/wclass/binbuild ==
+====== 18:50:49 /home/travis/build/open-watcom/open-watcom-v2/bld/wclass ======
+= 18:50:49 /home/travis/build/open-watcom/open-watcom-v2/bld/wclass/binbuild ==
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o wabout.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__       -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wclass/hpp" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/gui/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/wclass/cpp/wabout.cpp
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o wautodlg.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__       -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wclass/hpp" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/gui/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/wclass/cpp/wautodlg.cpp
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o wbaritem.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__       -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wclass/hpp" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/gui/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/wclass/cpp/wbaritem.cpp
@@ -4186,10 +4198,10 @@ g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o wwindow.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__       -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wclass/hpp" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/gui/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/wclass/cpp/wwindow.cpp
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o wwinmain.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__       -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wclass/hpp" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/gui/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/wclass/cpp/wwinmain.cpp
 ar crs wclass.lib wabout.obj wautodlg.obj wbaritem.obj wboolsw.obj wbutton.obj wcheckbx.obj wclass.obj wcmdargs.obj wcmdlist.obj wcolrdlg.obj wcombox.obj wcontrol.obj wdialog.obj weditbox.obj weditdlg.obj wfile.obj wfiledlg.obj wfilelst.obj wfilenam.obj wgroupbx.obj whotspot.obj winflist.obj winpdlg.obj wlistbox.obj wmdichld.obj wmdiwndw.obj wmenu.obj wmenuitm.obj wmenuobj.obj wmenusep.obj wmetrics.obj wmodel.obj wmsgdlg.obj wname.obj wobjfile.obj wobjmap.obj wstrmap.obj wpaint.obj wpickbox.obj wpickcbx.obj wpickdlg.obj wpicklst.obj wpopmenu.obj wpshbttn.obj wradbttn.obj wrect.obj wstatwin.obj wstring.obj wstrlist.obj wsyshelp.obj wtext.obj wtokfile.obj wtoolbar.obj wvcllctn.obj wview.obj wvlist.obj wvlist1.obj wwindow.obj wwinmain.obj
-====== 20:42:13 /home/travis/build/open-watcom/open-watcom-v2/bld/wclass ======
+====== 18:50:55 /home/travis/build/open-watcom/open-watcom-v2/bld/wclass ======
 **** Building the idelib bootstrap
-===== 20:42:13 /home/travis/build/open-watcom/open-watcom-v2/bld/ide/lib ======
-= 20:42:13 /home/travis/build/open-watcom/open-watcom-v2/bld/ide/lib/binbuild =
+===== 18:50:55 /home/travis/build/open-watcom/open-watcom-v2/bld/ide/lib ======
+= 18:50:55 /home/travis/build/open-watcom/open-watcom-v2/bld/ide/lib/binbuild =
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o contfile.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I. -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wclass/hpp" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/gui/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../cpp/contfile.cpp
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o maccel.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I. -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wclass/hpp" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/gui/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../cpp/maccel.cpp
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o maction.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I. -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wclass/hpp" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/gui/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../cpp/maction.cpp
@@ -4217,18 +4229,18 @@ g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o mvswitch.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I. -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wclass/hpp" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/gui/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../cpp/mvswitch.cpp
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o mworkfil.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I. -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wclass/hpp" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/gui/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/lib_misc/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../cpp/mworkfil.cpp
 ar crs ide.lib contfile.obj maccel.obj maction.obj mactset.obj mc2swtch.obj mcommand.obj mcompon.obj mconfig.obj mcstate.obj mcswitch.obj mfamily.obj mitem.obj mproject.obj mrstate.obj mrswitch.obj mrule.obj mstate.obj mswitch.obj msymbol.obj mtarget.obj mtool.obj mtoolitm.obj mtypo.obj mvstate.obj mvswitch.obj mworkfil.obj
-===== 20:42:16 /home/travis/build/open-watcom/open-watcom-v2/bld/ide/lib ======
+===== 18:50:59 /home/travis/build/open-watcom/open-watcom-v2/bld/ide/lib ======
 **** Building the ide2make bootstrap
-=== 20:42:16 /home/travis/build/open-watcom/open-watcom-v2/bld/ide/ide2make ===
-= 20:42:16 /home/travis/build/open-watcom/open-watcom-v2/bld/ide/ide2make/binbuild ==
+=== 18:50:59 /home/travis/build/open-watcom/open-watcom-v2/bld/ide/ide2make ===
+= 18:50:59 /home/travis/build/open-watcom/open-watcom-v2/bld/ide/ide2make/binbuild ==
 g++ -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o bviper.obj -std=c++98 -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/ide/lib/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/wclass/hpp" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/gui/h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../cpp/bviper.cpp
 gcc -pipe  -O -g -o ide2make.exe  -Wl,-Map,ide2make.map bviper.obj /home/travis/build/open-watcom/open-watcom-v2/bld/ide/lib/binbuild/ide.lib /home/travis/build/open-watcom/open-watcom-v2/bld/wclass/binbuild/wclass.lib /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib  -lsupc++ -lstdc++
-=== 20:42:16 /home/travis/build/open-watcom/open-watcom-v2/bld/ide/ide2make ===
+=== 18:51:00 /home/travis/build/open-watcom/open-watcom-v2/bld/ide/ide2make ===
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/ide/ide2make/binbuild/ide2make.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bide2mak'...
-=== 20:42:16 /home/travis/build/open-watcom/open-watcom-v2/bld/ide/ide2make ===
+=== 18:51:00 /home/travis/build/open-watcom/open-watcom-v2/bld/ide/ide2make ===
 **** Building the ziplib bootstrap
-= 20:42:16 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/ziplib ==
-= 20:42:16 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/ziplib/binbuild =
+= 18:51:00 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/ziplib ==
+= 18:51:00 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/ziplib/binbuild =
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o zadd.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/libzip/lib" -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/zlib"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/contrib/libzip/lib/zadd.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o zclose.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/libzip/lib" -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/zlib"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/contrib/libzip/lib/zclose.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o zdelete.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/libzip/lib" -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/zlib"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/contrib/libzip/lib/zdelete.c
@@ -4269,10 +4281,10 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o zuchgall.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/libzip/lib" -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/zlib"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/contrib/libzip/lib/zuchgall.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o zuchgdat.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/libzip/lib" -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/zlib"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/contrib/libzip/lib/zuchgdat.c
 ar crs ziplib.lib zadd.obj zclose.obj zdelete.obj zdirent.obj zentfree.obj zentnew.obj zerr2str.obj zerrget.obj zerrgets.obj zerrstr.obj zerrstre.obj zfclose.obj zferrget.obj zfgetoff.obj zfopen.obj zfopenin.obj zfread.obj zfree.obj zstrerr.obj zgetname.obj zgetnumf.obj ziperror.obj znameloc.obj znew.obj zopen.obj zrename.obj zreplace.obj zsetname.obj zsrcbuff.obj zsrcfile.obj zsrcfilp.obj zsrcfree.obj zsrcfunc.obj zsrczip.obj zstat.obj zstatind.obj zuchg.obj zuchgall.obj zuchgdat.obj
-= 20:42:18 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/ziplib ==
+= 18:51:01 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/ziplib ==
 **** Building the zlib bootstrap
-== 20:42:18 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/zlib ===
-= 20:42:18 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/zlib/binbuild =
+== 18:51:01 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/zlib ===
+= 18:51:01 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/zlib/binbuild =
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o adler32.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/zlib"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/contrib/zlib/adler32.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o compress.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/zlib"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/contrib/zlib/compress.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o crc32.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/zlib"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/contrib/zlib/crc32.c
@@ -4286,10 +4298,10 @@ gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-b
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o uncompr.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/zlib"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/contrib/zlib/uncompr.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o zutil.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/zlib"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/contrib/zlib/zutil.c
 ar crs zlib.lib adler32.obj compress.obj crc32.obj deflate.obj gzio.obj infback.obj inffast.obj inflate.obj inftrees.obj trees.obj uncompr.obj zutil.obj
-== 20:42:19 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/zlib ===
+== 18:51:03 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/zlib ===
 **** Building the mkdisk bootstrap
-= 20:42:19 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/mkdisk ==
-= 20:42:19 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/mkdisk/binbuild =
+= 18:51:03 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/mkdisk ==
+= 18:51:03 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/mkdisk/binbuild =
 gcc -pipe -fno-asm -fno-common -fsigned-char  -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/libzip/lib" -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/zlib" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/builder/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../mkexezip.c -D__UNIX__ -D__FLAT__ -D__LINUX__ -D_M_X64 -D__LINUX_X64__ -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o mkexezip.exe /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib  -Wl,-Map,mkexezip.map
 gcc -pipe -fno-asm -fno-common -fsigned-char  -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/libzip/lib" -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/zlib" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/builder/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../uzip.c -D__UNIX__ -D__FLAT__ -D__LINUX__ -D_M_X64 -D__LINUX_X64__ -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o uzip.exe /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib  -Wl,-Map,uzip.map /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/ziplib/binbuild/ziplib.lib /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/zlib/binbuild/zlib.lib
 ../uzip.c: In function ‘main’:
@@ -4313,23 +4325,23 @@ gcc -pipe -fno-asm -fno-common -fsigned-char  -I"../../h" -I"/home/travis/build/
      chdir( IncludeStk->cwd );
           ^
 gcc -pipe -fno-asm -fno-common -fsigned-char  -I"../../h" -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/libzip/lib" -I"/home/travis/build/open-watcom/open-watcom-v2/contrib/zlib" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/builder/h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../mkinf.c -D__UNIX__ -D__FLAT__ -D__LINUX__ -D_M_X64 -D__LINUX_X64__ -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o mkinf.exe /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib  -Wl,-Map,mkinf.map
-= 20:42:20 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/mkdisk ==
+= 18:51:04 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/mkdisk ==
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/mkdisk/binbuild/mkexezip.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/mkexezip'...
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/mkdisk/binbuild/uzip.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/uzip'...
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/mkdisk/binbuild/langdat.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/langdat'...
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/mkdisk/binbuild/mkinf.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/mkinf'...
-= 20:42:20 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/mkdisk ==
+= 18:51:04 /home/travis/build/open-watcom/open-watcom-v2/bld/setupgui/mkdisk ==
 **** Building the errsrc bootstrap
-==== 20:42:20 /home/travis/build/open-watcom/open-watcom-v2/bld/f77/utils =====
-= 20:42:20 /home/travis/build/open-watcom/open-watcom-v2/bld/f77/utils/binbuild =
+==== 18:51:04 /home/travis/build/open-watcom/open-watcom-v2/bld/f77/utils =====
+= 18:51:04 /home/travis/build/open-watcom/open-watcom-v2/bld/f77/utils/binbuild =
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o errsrc.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__        -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/errsrc.c
 gcc -pipe  -O -g -o errsrc.exe  -Wl,-Map,errsrc.map errsrc.obj /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-==== 20:42:20 /home/travis/build/open-watcom/open-watcom-v2/bld/f77/utils =====
+==== 18:51:04 /home/travis/build/open-watcom/open-watcom-v2/bld/f77/utils =====
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/f77/utils/binbuild/errsrc.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/errsrc'...
-==== 20:42:20 /home/travis/build/open-watcom/open-watcom-v2/bld/f77/utils =====
+==== 18:51:04 /home/travis/build/open-watcom/open-watcom-v2/bld/f77/utils =====
 **** Building the wdis bootstrap
-===== 20:42:20 /home/travis/build/open-watcom/open-watcom-v2/bld/ndisasm ======
-= 20:42:20 /home/travis/build/open-watcom/open-watcom-v2/bld/ndisasm/binbuild =
+===== 18:51:04 /home/travis/build/open-watcom/open-watcom-v2/bld/ndisasm ======
+= 18:51:04 /home/travis/build/open-watcom/open-watcom-v2/bld/ndisasm/binbuild =
 awk -v base=WDIS_LITERAL_BASE -f /home/travis/build/open-watcom/open-watcom-v2/build/makemsg.awk -v OUTFILE=msg.gh ../stand/wdis.msg
 gcc -pipe -fno-asm -fno-common -fsigned-char   -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/ndisasm/core/c/disbuild.c -DNDIS_all -I"../h" -I"/home/travis/build/open-watcom/open-watcom-v2/bld/ndisasm/core/h" -D__UNIX__ -D__FLAT__ -D__LINUX__ -D_M_X64 -D__LINUX_X64__ -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o ./disbuild.exe /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib  -Wl,-Map,disbuild.map
 ./disbuild.exe
@@ -4413,18 +4425,18 @@ awk -v base=MSG_USAGE_BASE -v lang=1 -f /home/travis/build/open-watcom/open-watc
 bwrc -q -xb -r -bt=windows -zk0 -D__UNIX__ -D__LINUX__ -D_M_X64 -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" /home/travis/build/open-watcom/open-watcom-v2/bld/ndisasm/stand/h/wdis.rc -I"../stand/h" -I"../stand" -fo=wresui.res
 gcc -pipe  -O -g -o wdis.exe  -Wl,-Map,wdis.map args.obj buffer.obj dwarf.obj externs.obj formasm.obj fini.obj groups.obj identsec.obj init.obj hashtabl.obj labproc.obj main.obj memfuncs.obj msg.obj pass1.obj pass2.obj pdata.obj print.obj publics.obj srcmix.obj refproc.obj cmdlhelp.obj disentry.obj disaxp.obj disppc.obj disx86.obj dissparc.obj dismips.obj disx64.obj demangle.obj  /home/travis/build/open-watcom/open-watcom-v2/bld/orl/binbuild/orl.lib /home/travis/build/open-watcom/open-watcom-v2/bld/wres/binbuild/wres.lib /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
 bwstrip -q -a -r wdis.exe . wresui.res
-===== 20:42:24 /home/travis/build/open-watcom/open-watcom-v2/bld/ndisasm ======
+===== 18:51:09 /home/travis/build/open-watcom/open-watcom-v2/bld/ndisasm ======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/ndisasm/binbuild/wdis.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bwdis'...
-===== 20:42:24 /home/travis/build/open-watcom/open-watcom-v2/bld/ndisasm ======
+===== 18:51:09 /home/travis/build/open-watcom/open-watcom-v2/bld/ndisasm ======
 **** Building the dmpobj bootstrap
-====== 20:42:24 /home/travis/build/open-watcom/open-watcom-v2/bld/dmpobj ======
-= 20:42:24 /home/travis/build/open-watcom/open-watcom-v2/bld/dmpobj/binbuild ==
+====== 18:51:09 /home/travis/build/open-watcom/open-watcom-v2/bld/dmpobj ======
+= 18:51:09 /home/travis/build/open-watcom/open-watcom-v2/bld/dmpobj/binbuild ==
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o dmpobj.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/dmpobj.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o objread.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/objread.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o output.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/output.c
 gcc -pipe -c -fno-asm -fno-common -fsigned-char -Wall -Wno-switch -Wno-missing-braces -Wno-parentheses -O -g -o process.obj  -DNDEBUG -D_ENABLE_AUTODEPEND -DBOOTSTRAP -D_M_X64 -D__LINUX_X64__ -D__UNIX__ -D__FLAT__ -D__LINUX__      -I"../h"  -I"/home/travis/build/open-watcom/open-watcom-v2/bld/watcom/h" ../c/process.c
 gcc -pipe  -O -g -o dmpobj.exe  -Wl,-Map,dmpobj.map dmpobj.obj objread.obj output.obj process.obj  /home/travis/build/open-watcom/open-watcom-v2/bld/watcom/binbuild/clibext.lib
-====== 20:42:24 /home/travis/build/open-watcom/open-watcom-v2/bld/dmpobj ======
+====== 18:51:09 /home/travis/build/open-watcom/open-watcom-v2/bld/dmpobj ======
 Copying '/home/travis/build/open-watcom/open-watcom-v2/bld/dmpobj/binbuild/dmpobj.exe' to '/home/travis/build/open-watcom/open-watcom-v2/build/binbuild/bdmpobj'...
-====== 20:42:24 /home/travis/build/open-watcom/open-watcom-v2/bld/dmpobj ======
-========= 20:42:24 /home/travis/build/open-watcom/open-watcom-v2/bld ==========
+====== 18:51:09 /home/travis/build/open-watcom/open-watcom-v2/bld/dmpobj ======
+========= 18:51:09 /home/travis/build/open-watcom/open-watcom-v2/bld ==========
