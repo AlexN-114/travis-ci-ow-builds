@@ -109,11 +109,23 @@ struct sched_param {
 
 typedef unsigned int    ino_t;  /* i-node # type */
 typedef int             dev_t;  /* device code (drive #) */
-typedef long            off_t;  /* file offset value */
+#ifndef _OFF_T_DEFINED_
+ #define _OFF_T_DEFINED_
+ typedef long           off_t;  /* file offset value */
+#endif
 typedef int             mode_t; /* file mode (attributes) */
-typedef int             pid_t;  /* Used for process IDs & group IDs */
-typedef unsigned long   uid_t;  /* user identifier */
-typedef unsigned long   gid_t;  /* group identifier */
+#ifndef _PID_T_DEFINED_
+ #define _PID_T_DEFINED_
+ typedef int            pid_t;  /* Used for process IDs & group IDs */
+#endif
+#ifndef _UID_T_DEFINED_
+ #define _UID_T_DEFINED_
+ typedef unsigned long  uid_t;  /* user identifier */
+#endif
+#ifndef _GID_T_DEFINED_
+ #define _GID_T_DEFINED_
+ typedef unsigned long  gid_t;  /* group identifier */
+#endif
 typedef long long       id_t;   /* pid_t, uid_t or gid_t */
 
 #define major(device)           ((int)(((device) >> 8) & 0xFF))

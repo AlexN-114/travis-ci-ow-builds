@@ -65,7 +65,10 @@ _WCRTLINK extern int    getopt( int __argc, char * const __argv[], const char *_
 _WCRTLINK extern int    getpid( void );
 
 #ifdef __RDOS__
-typedef int             pid_t;  /* Used for process IDs & group IDs */
+#ifndef _PID_T_DEFINED_
+ #define _PID_T_DEFINED_
+ typedef int            pid_t;  /* Used for process IDs & group IDs */
+#endif
 _WCRTLINK extern pid_t  fork( void );
 _WCRTLINK extern pid_t  waitpid( pid_t __pid, int *__stat_loc, int __options );
 #endif
